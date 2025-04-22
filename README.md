@@ -2,3 +2,4 @@
 
 Projeto simples para demonstrar um fluxo de integração contínua (CI) com GitHub Actions.
 Linha extra no README
+Atualização para acionar CI/CD
