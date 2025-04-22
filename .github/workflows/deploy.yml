@@ -1,0 +1,18 @@
+name: CD - Deploy Simples
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout do código
+        uses: actions/checkout@v3
+
+      - name: Simulando Deploy
+        run: |
+          echo "Iniciando processo de deploy..."
+          echo "Deploy concluído com sucesso!"
