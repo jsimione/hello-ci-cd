@@ -4,3 +4,4 @@ Projeto simples para demonstrar um fluxo de integração contínua (CI) com GitH
 Linha extra no README
 Disparando workflows manualmente
 forçando CI/CD
+Disparando alerta para Discord
