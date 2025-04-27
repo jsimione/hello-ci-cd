@@ -1,0 +1,20 @@
+name: Alerta no Discord
+
+on:
+  push:
+    branches:
+      - dev
+
+jobs:
+  discord_alert:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Enviar alerta para Discord
+        run: |
+          curl -H "Content-Type: application/json" \
+          -X POST \
+          -d "{\"content\": \"🚀 Novo commit no repositório hello-ci-cd!\"}" \
+          https://discord.com/api/webhooks/1366185835925602454/pfK7u1jV3GJ44BQsDK42CWXnrvbbJ9X6eOB9sraOjaHDWQuK0KTJJANLj_qmGDYk0ZFW
+
+
+          
